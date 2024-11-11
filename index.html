@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Creazione Animali Domestici</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Creazione Animale Domestico</h2>
+    
+    <form id="petForm">
+        <label for="petName">Nome Animale:</label>
+        <input type="text" id="petName" name="petName" required><br><br>
+        
+        <label for="ownerName">Nome Padrone:</label>
+        <input type="text" id="ownerName" name="ownerName" required><br><br>
+        
+        <label for="species">Specie:</label>
+        <select id="species" name="species" required>
+            <option value="Cane">Cane</option>
+            <option value="Gatto">Gatto</option>
+            <option value="Coniglio">Coniglio</option>
+            <option value="Uccello">Uccello</option>
+        </select><br><br>
+        
+        <label for="breed">Razza:</label>
+        <input type="text" id="breed" name="breed" required><br><br>
+        
+        <button class="button" type="submit">Aggiungi Animale</button>
+    </form>
+
+    <h3>Lista Animali</h3>
+    <div id="petList"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
